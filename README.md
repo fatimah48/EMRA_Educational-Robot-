@@ -47,6 +47,52 @@ the robot rather than across separate tablet applications.
 </tr>
 </table>
 
+## Talk with EMRA
+
+Open conversation with EMRA. The child speaks, the robot listens, replies and
+responds with a facial expression. This is the only activity that routes
+through the language model. Speech is transcribed, emotion is read from both
+the transcript and the child's face, the two channels are fused, and the fused
+signal conditions the reply and the expression the robot shows. The
+educational games are entirely separate from this track and never call the
+language model.
+
+_Screens for this activity are being captured._
+
+## Body parts
+
+Body Explorer teaches the child to identify facial parts and the hand in
+English and Arabic. The child sits in front of the robot's camera and sees
+themselves mirrored on the screen. Each round names one part, both as a
+labelled illustration and as a spoken prompt, and the child answers by
+pointing to that part on their own face.
+
+Two computer vision models run on the live camera stream. A face landmark
+model returns 468 three-dimensional facial landmarks per frame together with
+expression signals, which fixes the on-screen position of the nose, eyes, ears
+and mouth. A hand landmark model returns 21 hand landmarks, from which the
+index fingertip is taken. On every frame the system measures the distance from
+the fingertip to each candidate part and takes the nearest one. The answer
+counts as correct only when the nearest part is the part that was requested
+and the fingertip is held there for roughly half a second. When the fingertip
+settles on a different part the round is rejected and the child is asked to try
+again.
+
+That nearest-part rule is what makes the activity discriminative rather than
+merely motion sensitive: pointing at an eye when the mouth was named is
+rejected. The teeth round adds the expression signals, so the child must point
+at the mouth and show their teeth, which separates teeth from mouth despite the
+shared location. The hand round only checks that a hand is visible. Hold times
+and re-prompt thresholds are deliberately lenient to allow for imprecise motor
+control at this age.
+
+Spoken feedback is pre-rendered offline rather than synthesised at run time, so
+the activity plays bilingual audio without loading a speech model. The module
+is isolated from the rest of the robot software and cannot affect the
+conversational track.
+
+_Screens for this activity are being captured._
+
 ## Puzzle
 
 Visual matching and spatial reasoning. Four pictures are offered across four
@@ -64,12 +110,8 @@ replay anything already unlocked without the level gate.
 <td width="50%"><img src="docs/interfaces/03-puzzle/04-completion-bus-en.png" width="100%"><br><sub>Completion feedback. The solved picture is shown and the next level is unlocked.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/03-puzzle/05-gameplay-flower-en.png" width="100%"><br><sub>Level two, four pieces.</sub></td>
 <td width="50%"><img src="docs/interfaces/03-puzzle/06-gameplay-friends-en.png" width="100%"><br><sub>Level three, six pieces, with the unplaced pieces held in the tray below the board.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/03-puzzle/07-free-play-en.png" width="100%"><br><sub>Free play. Any unlocked picture can be replayed without the level gate.</sub></td>
-<td></td>
 </tr>
 </table>
 
@@ -97,15 +139,7 @@ eight, so difficulty rises through both region count and region size.
 <table>
 <tr>
 <td width="50%"><img src="docs/interfaces/05-painting/01-rainbow-en.png" width="100%"><br><sub>Colour by number with five regions. The numbered key sits under the drawing and the reference image stays visible at the left.</sub></td>
-<td width="50%"><img src="docs/interfaces/05-painting/02-number-six-en.png" width="100%"><br><sub>Template combining numeral recognition with colour matching.</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/interfaces/05-painting/03-duck-en.png" width="100%"><br><sub>Five region template.</sub></td>
-<td width="50%"><img src="docs/interfaces/05-painting/04-turtle-en.png" width="100%"><br><sub>Six region template.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/05-painting/05-elephant-en.png" width="100%"><br><sub>Six region template with clustered small regions, which raises the precision needed.</sub></td>
-<td width="50%"><img src="docs/interfaces/05-painting/06-house-en.png" width="100%"><br><sub>Five region template.</sub></td>
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/05-painting/07-ice-cream-en.png" width="100%"><br><sub>Eight region template, the hardest in the set.</sub></td>
@@ -131,8 +165,8 @@ written name and the colour are presented together.
 <td width="50%"><img src="docs/interfaces/06-colors/04-discover-board-en.png" width="100%"><br><sub>Colour discovery board with eleven named colours, each spoken when selected.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/06-colors/05-reveal-animation-en.png" width="100%"><br><sub>Fill animation played after a colour is chosen.</sub></td>
 <td width="50%"><img src="docs/interfaces/06-colors/06-word-reveal-en.png" width="100%"><br><sub>The written colour word shown with the spoken name, pairing the two forms.</sub></td>
+<td></td>
 </tr>
 </table>
 
@@ -150,10 +184,6 @@ bubbles, which separates recognising the spoken word from producing the shape.
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/07-numbers/03-listen-find-one-en.png" width="100%"><br><sub>Listening task. A number is spoken and the matching bubble must be found, which separates hearing the word from writing the shape.</sub></td>
-<td width="50%"><img src="docs/interfaces/07-numbers/04-listen-find-four-en.png" width="100%"><br><sub>Listening task with correct answer feedback delivered by the on-screen robot.</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/interfaces/07-numbers/05-listen-find-six-en.png" width="100%"><br><sub>Final item of level one.</sub></td>
 <td></td>
 </tr>
 </table>
@@ -203,7 +233,7 @@ hold on a page for as long as the child needs.
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/09-reading/03-story-seed-en.png" width="100%"><br><sub>Second story. Pages advance manually so an educator can hold on a page.</sub></td>
-<td width="50%"><img src="docs/interfaces/09-reading/04-story-cat-en.png" width="100%"><br><sub>Third story.</sub></td>
+<td></td>
 </tr>
 </table>
 
@@ -220,14 +250,23 @@ shape, using the same dotted guide and start marker as the numeral task.
 <td width="50%"><img src="docs/interfaces/10-letters/02-flower-letter-a-en.png" width="100%"><br><sub>Correct choice. The flower grows and an example word beginning with the letter is spoken.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/10-letters/03-flower-letter-b-en.png" width="100%"><br><sub>A later item in the same level.</sub></td>
 <td width="50%"><img src="docs/interfaces/10-letters/04-tracing-a-start-en.png" width="100%"><br><sub>Letter tracing, using the same dotted guide and start marker as the numeral task.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/10-letters/05-tracing-a-success-en.png" width="100%"><br><sub>Completed trace with praise from the on-screen robot.</sub></td>
-<td></td>
 </tr>
 </table>
+
+## Educator dashboard
+
+The educator view, reached from a separate entry point on the main menu. For a
+single child it reports accuracy, mean response time, attempts, help usage,
+level reached and stars earned, broken down by activity. For the cohort it
+ranks children on the same measures. A report generator turns the logged
+records into written progress notes in English or Arabic covering strengths,
+difficulties and suggested next steps. Conversation sessions from the Talk
+activity are listed separately with turn counts and duration, and a report can
+be generated over selected sessions and e-mailed to the educator.
+
+_Screens for this activity are being captured._
 
 ## Administrator panel
 

@@ -97,6 +97,8 @@ def main():
         if not os.path.isfile(src):
             missing.append(row["source"])
             continue
+        if row["privacy"] == "skip":
+            continue
         base = OUT_DIR if row["privacy"] == "ok" else HOLD_DIR
         folder = os.path.join(base, row["module"])
         if not os.path.isdir(folder):
@@ -130,13 +132,15 @@ def write_readme(published, held, intros):
         lines.append("")
     for module in sorted(MODULE_TITLES):
         items = sorted(published.get(module, []))
-        if not items:
-            continue
         lines.append("## " + MODULE_TITLES[module])
         lines.append("")
         if module in intros:
             lines.append(intros[module])
             lines.append("")
+        if not items:
+            lines.append("_Screens for this activity are being captured._")
+            lines.append("")
+            continue
         lines.append("<table>")
         for i in range(0, len(items), COLUMNS):
             row = items[i:i + COLUMNS]

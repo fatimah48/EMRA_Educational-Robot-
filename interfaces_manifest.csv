@@ -6,24 +6,24 @@ main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the 
 20260811_15h25m03s_grim.png,03-puzzle,02,level-select,ar,"The same screen in Arabic. Layout, level order and progress state mirror to right to left.",ok,chest
 20260811_15h25m18s_grim.png,03-puzzle,03,gameplay-bus,en,"Level one, two pieces. The reference picture is available on demand from the bar above the board.",ok,chest
 20260811_15h25m27s_grim.png,03-puzzle,04,completion-bus,en,Completion feedback. The solved picture is shown and the next level is unlocked.,ok,chest
-20260811_15h25m43s_grim.png,03-puzzle,05,gameplay-flower,en,"Level two, four pieces.",ok,chest
+20260811_15h25m43s_grim.png,03-puzzle,05,gameplay-flower,en,"Level two, four pieces.",skip,chest
 20260811_15h25m56s_grim.png,03-puzzle,06,gameplay-friends,en,"Level three, six pieces, with the unplaced pieces held in the tray below the board.",ok,chest
 20260811_15h26m29s_grim.png,03-puzzle,07,free-play,en,Free play. Any unlocked picture can be replayed without the level gate.,ok,chest
 20260811_15h26m43s_grim.png,11-educator-dashboard,01,children-list,en,"All enrolled children with per-activity progress, searchable by name or identifier.",review,chest
 20260811_15h27m06s_grim.png,04-lego,01,level-select,en,"Level selection across eight target models, ordered by brick count and by the number of distinct colours.",ok,chest
 20260811_15h27m37s_grim.png,04-lego,02,gameplay-tree,en,"Building in progress. The target model sits at the top left, the working grid in the centre, and the available bricks in the tray below.",ok,chest
 20260811_15h28m55s_grim.png,05-painting,01,rainbow,en,Colour by number with five regions. The numbered key sits under the drawing and the reference image stays visible at the left.,ok,chest
-20260811_15h29m04s_grim.png,05-painting,02,number-six,en,Template combining numeral recognition with colour matching.,ok,chest
-20260811_15h29m06s_grim.png,05-painting,03,duck,en,Five region template.,ok,chest
-20260811_15h29m08s_grim.png,05-painting,04,turtle,en,Six region template.,ok,chest
+20260811_15h29m04s_grim.png,05-painting,02,number-six,en,Template combining numeral recognition with colour matching.,skip,chest
+20260811_15h29m06s_grim.png,05-painting,03,duck,en,Five region template.,skip,chest
+20260811_15h29m08s_grim.png,05-painting,04,turtle,en,Six region template.,skip,chest
 20260811_15h29m12s_grim.png,05-painting,05,elephant,en,"Six region template with clustered small regions, which raises the precision needed.",ok,chest
-20260811_15h29m13s_grim.png,05-painting,06,house,en,Five region template.,ok,chest
+20260811_15h29m13s_grim.png,05-painting,06,house,en,Five region template.,skip,chest
 20260811_15h29m18s_grim.png,05-painting,07,ice-cream,en,"Eight region template, the hardest in the set.",ok,chest
 20260811_15h29m39s_grim.png,06-colors,01,menu,en,Entry screen for the two colour activities.,ok,chest
 20260811_15h29m50s_grim.png,06-colors,02,match-gameplay,en,"Colour matching. Each named crayon is dragged to its swatch, so the task tests the colour name and not only the colour.",ok,chest
 20260811_15h29m57s_grim.png,06-colors,03,match-complete,en,Feedback shown once every pair is matched.,ok,chest
 20260811_15h30m19s_grim.png,06-colors,04,discover-board,en,"Colour discovery board with eleven named colours, each spoken when selected.",ok,chest
-20260811_15h30m29s_grim.png,06-colors,05,reveal-animation,en,Fill animation played after a colour is chosen.,ok,chest
+20260811_15h30m29s_grim.png,06-colors,05,reveal-animation,en,Fill animation played after a colour is chosen.,skip,chest
 20260811_15h30m31s_grim.png,06-colors,06,word-reveal,en,"The written colour word shown with the spoken name, pairing the two forms.",ok,chest
 20260811_15h30m47s_grim.png,08-writing,01,tracing-level-select,en,"Word tracing level selection, three levels.",ok,chest
 20260811_15h30m50s_grim.png,08-writing,02,tracing-start,en,Tracing task before the first stroke. The guide word sits faded inside the writing area.,ok,chest
@@ -37,17 +37,17 @@ main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the 
 20260811_15h32m19s_grim.png,09-reading,01,contents,en,Contents page listing three illustrated stories with their length.,ok,chest
 20260811_15h32m24s_grim.png,09-reading,02,story-star,en,Story page during narration. The word being spoken is highlighted in the text.,ok,chest
 20260811_15h32m33s_grim.png,09-reading,03,story-seed,en,Second story. Pages advance manually so an educator can hold on a page.,ok,chest
-20260811_15h32m36s_grim.png,09-reading,04,story-cat,en,Third story.,ok,chest
+20260811_15h32m36s_grim.png,09-reading,04,story-cat,en,Third story.,skip,chest
 20260811_15h32m51s_grim.png,10-letters,01,flower-start,en,Letter recognition. A letter is named and the child picks the matching tile from the row.,ok,chest
 20260811_15h32m53s_grim.png,10-letters,02,flower-letter-a,en,Correct choice. The flower grows and an example word beginning with the letter is spoken.,ok,chest
-20260811_15h32m57s_grim.png,10-letters,03,flower-letter-b,en,A later item in the same level.,ok,chest
+20260811_15h32m57s_grim.png,10-letters,03,flower-letter-b,en,A later item in the same level.,skip,chest
 20260811_15h33m47s_grim.png,10-letters,04,tracing-a-start,en,"Letter tracing, using the same dotted guide and start marker as the numeral task.",ok,chest
 20260811_15h33m51s_grim.png,10-letters,05,tracing-a-success,en,Completed trace with praise from the on-screen robot.,ok,chest
 20260811_15h34m05s_grim.png,07-numbers,01,tracing-one-start,en,Numeral tracing. The dotted guide carries a marked starting point and the number name is spoken as the stroke is made.,ok,chest
 20260811_15h34m07s_grim.png,07-numbers,02,tracing-one-success,en,Completed trace with confirmation feedback.,ok,chest
 20260811_15h34m35s_grim.png,07-numbers,03,listen-find-one,en,"Listening task. A number is spoken and the matching bubble must be found, which separates hearing the word from writing the shape.",ok,chest
-20260811_15h34m38s_grim.png,07-numbers,04,listen-find-four,en,Listening task with correct answer feedback delivered by the on-screen robot.,ok,chest
-20260811_15h34m42s_grim.png,07-numbers,05,listen-find-six,en,Final item of level one.,ok,chest
+20260811_15h34m38s_grim.png,07-numbers,04,listen-find-four,en,Listening task with correct answer feedback delivered by the on-screen robot.,skip,chest
+20260811_15h34m42s_grim.png,07-numbers,05,listen-find-six,en,Final item of level one.,skip,chest
 20260811_15h34m58s_grim.png,12-admin,01,login,en,"Administrator sign in, which keeps maintenance functions out of reach during a session.",ok,chest
 20260811_15h35m28s_grim.png,12-admin,02,panel,en,Head servo calibration. Each rotation axis can be returned to its neutral position after transport or manual handling.,ok,chest
 20260811_15h36m00s_grim.png,11-educator-dashboard,02,child-summary,en,"Single child summary. Accuracy, mean response time, attempts, help usage, level reached and stars, broken down by activity.",review,chest
