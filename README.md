@@ -183,12 +183,12 @@ bubbles, which separates recognising the spoken word from producing the shape.
 
 <table>
 <tr>
+<td width="50%"><img src="docs/interfaces/07-numbers/00-menu-en.png" width="100%"><br><sub>Entry screen for the two number activities, tracing and the listening game.</sub></td>
 <td width="50%"><img src="docs/interfaces/07-numbers/01-tracing-one-start-en.png" width="100%"><br><sub>Numeral tracing. The dotted guide carries a marked starting point and the number name is spoken as the stroke is made.</sub></td>
-<td width="50%"><img src="docs/interfaces/07-numbers/02-tracing-one-success-en.png" width="100%"><br><sub>Completed trace with confirmation feedback.</sub></td>
 </tr>
 <tr>
+<td width="50%"><img src="docs/interfaces/07-numbers/02-tracing-one-success-en.png" width="100%"><br><sub>Completed trace with confirmation feedback.</sub></td>
 <td width="50%"><img src="docs/interfaces/07-numbers/03-listen-find-one-en.png" width="100%"><br><sub>Listening task. A number is spoken and the matching bubble must be found, which separates hearing the word from writing the shape.</sub></td>
-<td></td>
 </tr>
 </table>
 
@@ -202,24 +202,24 @@ and asks the child to place letter tiles in order to build the word.
 
 <table>
 <tr>
+<td width="50%"><img src="docs/interfaces/08-writing/00-menu-en.png" width="100%"><br><sub>Entry screen for the two writing activities, word tracing and spelling.</sub></td>
 <td width="50%"><img src="docs/interfaces/08-writing/01-tracing-level-select-en.png" width="100%"><br><sub>Word tracing level selection, three levels.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/interfaces/08-writing/02-tracing-start-en.png" width="100%"><br><sub>Tracing task before the first stroke. The guide word sits faded inside the writing area.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/08-writing/03-tracing-progress-en.png" width="100%"><br><sub>Tracing in progress. Each letter fills with colour as it is completed.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/interfaces/08-writing/04-tracing-success-en.png" width="100%"><br><sub>Success feedback with the pictured word, offering repetition or progression.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/08-writing/05-tracing-level-select-ar.png" width="100%"><br><sub>Arabic word tracing level selection.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/interfaces/08-writing/06-tracing-progress-ar.png" width="100%"><br><sub>Arabic tracing in progress, using connected letter forms with diacritics rather than a transliteration of the English task.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/08-writing/07-spelling-level-select-en.png" width="100%"><br><sub>Spelling activity level selection, four levels.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/08-spelling-gameplay-en.png" width="100%"><br><sub>Spelling. Letter tiles are placed in order to build the pictured word.</sub></td>
 </tr>
 <tr>
+<td width="50%"><img src="docs/interfaces/08-writing/08-spelling-gameplay-en.png" width="100%"><br><sub>Spelling. Letter tiles are placed in order to build the pictured word.</sub></td>
 <td width="50%"><img src="docs/interfaces/08-writing/09-spelling-success-en.png" width="100%"><br><sub>Success feedback with the completed word.</sub></td>
-<td></td>
 </tr>
 </table>
 
@@ -263,10 +263,11 @@ shape, using the same dotted guide and start marker as the numeral task.
 
 The educator view, reached from a separate entry point on the main menu. For a
 single child it reports accuracy, mean response time, attempts, help usage,
-level reached and stars earned, broken down by activity. For the cohort it
-ranks children on the same measures. A report generator turns the logged
-records into written progress notes in English or Arabic covering strengths,
-difficulties and suggested next steps. Conversation sessions from the Talk
+level reached and stars earned, broken down by activity. For the whole
+group it ranks children on the same measures. A report generator turns the
+logged records into written progress notes covering strengths, difficulties and
+suggested next steps, written in English or in Arabic depending on the language
+chosen before the report is produced. Conversation sessions from the Talk
 activity are listed separately with turn counts and duration, and a report can
 be generated over selected sessions and e-mailed to the educator.
 
@@ -284,24 +285,20 @@ be generated over selected sessions and e-mailed to the educator.
 <td width="50%"><img src="docs/interfaces/11-educator-dashboard/07-stars-earned-en.png" width="100%"><br><sub>Stars earned by activity.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/08-class-overview-en.png" width="100%"><br><sub>Cohort overview. Group size, mean accuracy, mean response time and total stars.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/09-accuracy-by-student-en.png" width="100%"><br><sub>Accuracy compared across the cohort.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/08-class-overview-en.png" width="100%"><br><sub>Overview of the whole group. Number of children, mean accuracy, mean response time and total stars.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/09-accuracy-by-student-en.png" width="100%"><br><sub>Accuracy compared across all children in the group.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/10-students-table-en.png" width="100%"><br><sub>Cohort table, sortable on age, stars, accuracy, mean time and activities attempted.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/11-llm-report-controls-en.png" width="100%"><br><sub>Report generation controls, including the output language.</sub></td>
-</tr>
-<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/10-students-table-en.png" width="100%"><br><sub>Full group table, sortable on age, stars, accuracy, mean time and activities attempted.</sub></td>
 <td width="50%"><img src="docs/interfaces/11-educator-dashboard/12-llm-report-body-en.png" width="100%"><br><sub>Generated progress report covering strengths, difficulties and suggested next steps.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/interfaces/11-educator-dashboard/14-talk-sessions-en.png" width="100%"><br><sub>Conversation sessions from the Talk activity, with turn count, duration and completion status.</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/15-talk-session-select-en.png" width="100%"><br><sub>Sessions must be selected before a conversation report is generated.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/16-talk-report-generating-en.png" width="100%"><br><sub>Report generation running over three selected sessions.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/11-educator-dashboard/17-talk-report-body-en.png" width="100%"><br><sub>Generated conversation report covering engagement, language and emotion, and practical suggestions.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/interfaces/11-educator-dashboard/18-talk-report-emailed-en.png" width="100%"><br><sub>Delivery confirmation for the report sent to the educator address.</sub></td>
+<td></td>
 </tr>
 </table>
 

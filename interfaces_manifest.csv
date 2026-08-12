@@ -56,14 +56,16 @@ main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the 
 20260811_15h36m14s_grim.png,11-educator-dashboard,05,accuracy-by-subject,en,Accuracy by activity.,ok,chest
 20260811_15h36m17s_grim.png,11-educator-dashboard,06,response-time,en,"Mean response time by activity, which exposes where a child is slow rather than inaccurate.",ok,chest
 20260811_15h36m18s_grim.png,11-educator-dashboard,07,stars-earned,en,Stars earned by activity.,ok,chest
-20260811_15h36m29s_grim.png,11-educator-dashboard,08,class-overview,en,"Cohort overview. Group size, mean accuracy, mean response time and total stars.",ok,chest
-20260811_15h36m32s_grim.png,11-educator-dashboard,09,accuracy-by-student,en,Accuracy compared across the cohort.,ok,chest
-20260811_15h36m34s_grim.png,11-educator-dashboard,10,students-table,en,"Cohort table, sortable on age, stars, accuracy, mean time and activities attempted.",ok,chest
-20260811_15h37m15s_grim.png,11-educator-dashboard,11,llm-report-controls,en,"Report generation controls, including the output language.",ok,chest
+20260811_15h36m29s_grim.png,11-educator-dashboard,08,class-overview,en,"Overview of the whole group. Number of children, mean accuracy, mean response time and total stars.",ok,chest
+20260811_15h36m32s_grim.png,11-educator-dashboard,09,accuracy-by-student,en,Accuracy compared across all children in the group.,ok,chest
+20260811_15h36m34s_grim.png,11-educator-dashboard,10,students-table,en,"Full group table, sortable on age, stars, accuracy, mean time and activities attempted.",ok,chest
+20260811_15h37m15s_grim.png,11-educator-dashboard,11,llm-report-controls,en,"Report generation controls, including the output language.",skip,chest
 20260811_15h37m18s_grim.png,11-educator-dashboard,12,llm-report-body,en,"Generated progress report covering strengths, difficulties and suggested next steps.",ok,chest
 20260811_15h37m20s_grim.png,11-educator-dashboard,13,llm-report-scrolled,en,Continuation of the same report.,skip,chest
 20260811_15h37m48s_grim.png,11-educator-dashboard,14,talk-sessions,en,"Conversation sessions from the Talk activity, with turn count, duration and completion status.",ok,chest
-20260811_15h38m51s_grim.png,11-educator-dashboard,15,talk-session-select,en,Sessions must be selected before a conversation report is generated.,ok,chest
-20260811_15h39m35s_grim.png,11-educator-dashboard,16,talk-report-generating,en,Report generation running over three selected sessions.,ok,chest
+20260811_15h38m51s_grim.png,11-educator-dashboard,15,talk-session-select,en,Sessions must be selected before a conversation report is generated.,skip,chest
+20260811_15h39m35s_grim.png,11-educator-dashboard,16,talk-report-generating,en,Report generation running over three selected sessions.,skip,chest
 20260811_15h39m47s_grim.png,11-educator-dashboard,17,talk-report-body,en,"Generated conversation report covering engagement, language and emotion, and practical suggestions.",ok,chest
 20260811_15h40m40s_grim.png,11-educator-dashboard,18,talk-report-emailed,en,Delivery confirmation for the report sent to the educator address.,ok,chest
+20260811_15h34m27s_grim.png,07-numbers,00,menu,en,"Entry screen for the two number activities, tracing and the listening game.",ok,chest
+20260811_15h30m42s_grim.png,08-writing,00,menu,en,"Entry screen for the two writing activities, word tracing and spelling.",ok,chest

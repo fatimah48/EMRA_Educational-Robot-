@@ -124,10 +124,11 @@ shape, using the same dotted guide and start marker as the numeral task.
 
 The educator view, reached from a separate entry point on the main menu. For a
 single child it reports accuracy, mean response time, attempts, help usage,
-level reached and stars earned, broken down by activity. For the cohort it
-ranks children on the same measures. A report generator turns the logged
-records into written progress notes in English or Arabic covering strengths,
-difficulties and suggested next steps. Conversation sessions from the Talk
+level reached and stars earned, broken down by activity. For the whole
+group it ranks children on the same measures. A report generator turns the
+logged records into written progress notes covering strengths, difficulties and
+suggested next steps, written in English or in Arabic depending on the language
+chosen before the report is produced. Conversation sessions from the Talk
 activity are listed separately with turn counts and duration, and a report can
 be generated over selected sessions and e-mailed to the educator.
 
