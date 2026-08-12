@@ -42,12 +42,8 @@ the robot rather than across separate tablet applications.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/00-overview/00-main-menu-en.png" width="100%"><br><sub>Main menu. Ten activities, the educator entry point at the left, and the session start panel at the right.</sub></td>
 <td width="50%"><img src="docs/interfaces/00-overview/01-session-start-validation-en.png" width="100%"><br><sub>The session start panel rejects an empty form, so a child record or an explicit guest choice is always made before an activity opens.</sub></td>
-</tr>
-<tr>
 <td width="50%"><img src="docs/interfaces/00-overview/02-session-start-filled-en.png" width="100%"><br><sub>Session start completed. Name, age, identifier and gender are bound to every record the session produces.</sub></td>
-<td></td>
 </tr>
 </table>
 
@@ -169,8 +165,8 @@ written name and the colour are presented together.
 <td width="50%"><img src="docs/interfaces/06-colors/04-discover-board-en.png" width="100%"><br><sub>Colour discovery board with eleven named colours, each spoken when selected.</sub></td>
 </tr>
 <tr>
+<td width="50%"><img src="docs/interfaces/06-colors/05-reveal-animation-en.png" width="100%"><br><sub>Fill animation played after a colour is chosen.</sub></td>
 <td width="50%"><img src="docs/interfaces/06-colors/06-word-reveal-en.png" width="100%"><br><sub>The written colour word shown with the spoken name, pairing the two forms.</sub></td>
-<td></td>
 </tr>
 </table>
 
@@ -250,12 +246,16 @@ shape, using the same dotted guide and start marker as the numeral task.
 
 <table>
 <tr>
+<td width="50%"><img src="docs/interfaces/10-letters/00-menu-en.png" width="100%"><br><sub>Entry screen for the two letter activities, the recognition garden and tracing.</sub></td>
 <td width="50%"><img src="docs/interfaces/10-letters/01-flower-start-en.png" width="100%"><br><sub>Letter recognition. A letter is named and the child picks the matching tile from the row.</sub></td>
-<td width="50%"><img src="docs/interfaces/10-letters/02-flower-letter-a-en.png" width="100%"><br><sub>Correct choice. The flower grows and an example word beginning with the letter is spoken.</sub></td>
 </tr>
 <tr>
+<td width="50%"><img src="docs/interfaces/10-letters/02-flower-letter-a-en.png" width="100%"><br><sub>Correct choice. The flower grows and an example word beginning with the letter is spoken.</sub></td>
 <td width="50%"><img src="docs/interfaces/10-letters/04-tracing-a-start-en.png" width="100%"><br><sub>Letter tracing, using the same dotted guide and start marker as the numeral task.</sub></td>
+</tr>
+<tr>
 <td width="50%"><img src="docs/interfaces/10-letters/05-tracing-a-success-en.png" width="100%"><br><sub>Completed trace with praise from the on-screen robot.</sub></td>
+<td></td>
 </tr>
 </table>
 

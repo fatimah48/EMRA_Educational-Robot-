@@ -99,7 +99,7 @@ def main():
             continue
         if row["privacy"] == "skip":
             continue
-        base = OUT_DIR if row["privacy"] == "ok" else HOLD_DIR
+        base = HOLD_DIR if row["privacy"] == "review" else OUT_DIR
         folder = os.path.join(base, row["module"])
         if not os.path.isdir(folder):
             os.makedirs(folder)
@@ -109,7 +109,7 @@ def main():
         record = (name, row["caption"], row["module"])
         if row["privacy"] == "ok":
             published.setdefault(row["module"], []).append(record)
-        else:
+        elif row["privacy"] == "review":
             held.append(os.path.join(row["module"], name))
 
     write_readme(published, held, read_intros())

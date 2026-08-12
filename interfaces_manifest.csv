@@ -1,5 +1,5 @@
 source,module,order,slug,lang,caption,privacy,crop
-main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the educator entry point at the left, and the session start panel at the right.",ok,chest
+main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the educator entry point at the left, and the session start panel at the right.",hidden,chest
 20260811_15h24m14s_grim.png,00-overview,01,session-start-validation,en,"The session start panel rejects an empty form, so a child record or an explicit guest choice is always made before an activity opens.",ok,chest
 20260811_15h24m42s_grim.png,00-overview,02,session-start-filled,en,"Session start completed. Name, age, identifier and gender are bound to every record the session produces.",ok,chest
 20260811_15h24m57s_grim.png,03-puzzle,01,level-select,en,"Level selection. Four levels, unlocked in order, with the piece count rising from two to six.",ok,chest
@@ -23,7 +23,7 @@ main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the 
 20260811_15h29m50s_grim.png,06-colors,02,match-gameplay,en,"Colour matching. Each named crayon is dragged to its swatch, so the task tests the colour name and not only the colour.",ok,chest
 20260811_15h29m57s_grim.png,06-colors,03,match-complete,en,Feedback shown once every pair is matched.,ok,chest
 20260811_15h30m19s_grim.png,06-colors,04,discover-board,en,"Colour discovery board with eleven named colours, each spoken when selected.",ok,chest
-20260811_15h30m29s_grim.png,06-colors,05,reveal-animation,en,Fill animation played after a colour is chosen.,skip,chest
+20260811_15h30m29s_grim.png,06-colors,05,reveal-animation,en,Fill animation played after a colour is chosen.,ok,chest
 20260811_15h30m31s_grim.png,06-colors,06,word-reveal,en,"The written colour word shown with the spoken name, pairing the two forms.",ok,chest
 20260811_15h30m47s_grim.png,08-writing,01,tracing-level-select,en,"Word tracing level selection, three levels.",ok,chest
 20260811_15h30m50s_grim.png,08-writing,02,tracing-start,en,Tracing task before the first stroke. The guide word sits faded inside the writing area.,ok,chest
@@ -69,3 +69,4 @@ main_interface1.png,00-overview,00,main-menu,en,"Main menu. Ten activities, the 
 20260811_15h40m40s_grim.png,11-educator-dashboard,18,talk-report-emailed,en,Delivery confirmation for the report sent to the educator address.,ok,chest
 20260811_15h34m27s_grim.png,07-numbers,00,menu,en,"Entry screen for the two number activities, tracing and the listening game.",ok,chest
 20260811_15h30m42s_grim.png,08-writing,00,menu,en,"Entry screen for the two writing activities, word tracing and spelling.",ok,chest
+20260811_15h32m45s_grim.png,10-letters,00,menu,en,"Entry screen for the two letter activities, the recognition garden and tracing.",ok,chest
