@@ -8,7 +8,10 @@
 # ---------------------------------------------------------------- settings --
 RAW_DIR = "raw_screenshots"          # folder holding the original grim captures
 MANIFEST = "interfaces_manifest.csv"  # mapping file
-OUT_DIR = "docs/interfaces"           # published gallery
+OUT_DIR = "docs/interfaces"
+README_OUT = "README.md"
+HEADER = "README_header.md"
+COLUMNS = 2
 HOLD_DIR = "_privacy_review"          # captures held back until anonymised
 REPO_URL = "https://github.com/USERNAME/EMRA"  # used in the README header
 
@@ -34,6 +37,7 @@ MODULE_TITLES = {
 # ---------------------------------------------------------------------------
 
 import csv
+import io
 import os
 import shutil
 from PIL import Image
@@ -120,54 +124,36 @@ def main():
 
 def write_readme(published, held, intros):
     lines = []
-    lines.append("# EMRA interface gallery")
-    lines.append("")
-    lines.append("Screen captures of the deployed EMRA system, taken from the 1768x828")
-    lines.append("chest touchscreen. Sections follow the order the activities appear in on")
-    lines.append("the main menu. Each section opens with a description of what the")
-    lines.append("activity asks the child to do and how the response is judged, followed")
-    lines.append("by the captures for that activity in both languages.")
-    lines.append("")
-    lines.append("Cite this gallery from the thesis by module and file name, for example")
-    lines.append("`03-puzzle/03-gameplay-bus-en.png`.")
-    lines.append("")
-    lines.append("## Contents")
-    lines.append("")
-    for module in sorted(MODULE_TITLES):
-        title = MODULE_TITLES[module]
-        count = len(published.get(module, []))
-        state = str(count) + (" figure" if count == 1 else " figures")
-        if not count:
-            state = "pending capture"
-        lines.append("- [" + title + "](#" + module + ") (" + state + ")")
-    lines.append("")
-    for module in sorted(MODULE_TITLES):
-        lines.append('<a id="' + module + '"></a>')
+    if os.path.isfile(HEADER):
+        with io.open(HEADER, encoding="utf-8") as fh:
+            lines.append(fh.read().rstrip())
         lines.append("")
+    for module in sorted(MODULE_TITLES):
+        items = sorted(published.get(module, []))
+        if not items:
+            continue
         lines.append("## " + MODULE_TITLES[module])
         lines.append("")
         if module in intros:
             lines.append(intros[module])
             lines.append("")
-        items = published.get(module, [])
-        if not items:
-            lines.append("_Captures pending._")
-            lines.append("")
-            continue
-        for name, caption, mod in sorted(items):
-            lines.append("**`" + mod + "/" + name + "`** " + caption)
-            lines.append("")
-            lines.append('<img src="' + mod + "/" + name + '" width="700">')
-            lines.append("")
-    if held:
-        lines.append("## Withheld")
+        lines.append("<table>")
+        for i in range(0, len(items), COLUMNS):
+            row = items[i:i + COLUMNS]
+            lines.append("<tr>")
+            for name, caption, mod in row:
+                src = OUT_DIR + "/" + mod + "/" + name
+                cell = '<td width="' + str(int(100 / COLUMNS)) + '%">'
+                cell += '<img src="' + src + '" width="100%"><br>'
+                cell += "<sub>" + caption + "</sub></td>"
+                lines.append(cell)
+            for _ in range(COLUMNS - len(row)):
+                lines.append("<td></td>")
+            lines.append("</tr>")
+        lines.append("</table>")
         lines.append("")
-        lines.append(str(len(held)) + " captures show real participant names, identifiers")
-        lines.append("or e-mail addresses and are held out of this repository until they are")
-        lines.append("recaptured with synthetic data.")
-        lines.append("")
-    with open(os.path.join(OUT_DIR, "README.md"), "w", encoding="utf-8") as fh:
-        fh.write("\n".join(lines) + "\n")
+    with io.open(README_OUT, "w", encoding="utf-8") as fh:
+        fh.write(chr(10).join(lines).rstrip() + chr(10))
 
 
 if __name__ == "__main__":
