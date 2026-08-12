@@ -45,6 +45,10 @@ the robot rather than across separate tablet applications.
 <td width="50%"><img src="docs/interfaces/00-overview/00-main-menu-en.png" width="100%"><br><sub>Main menu. Ten activities, the educator entry point at the left, and the session start panel at the right.</sub></td>
 <td width="50%"><img src="docs/interfaces/00-overview/01-session-start-validation-en.png" width="100%"><br><sub>The session start panel rejects an empty form, so a child record or an explicit guest choice is always made before an activity opens.</sub></td>
 </tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/00-overview/02-session-start-filled-en.png" width="100%"><br><sub>Session start completed. Name, age, identifier and gender are bound to every record the session produces.</sub></td>
+<td></td>
+</tr>
 </table>
 
 ## Talk with EMRA
@@ -266,7 +270,40 @@ difficulties and suggested next steps. Conversation sessions from the Talk
 activity are listed separately with turn counts and duration, and a report can
 be generated over selected sessions and e-mailed to the educator.
 
-_Screens for this activity are being captured._
+<table>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/01-children-list-en.png" width="100%"><br><sub>All enrolled children with per-activity progress, searchable by name or identifier.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/02-child-summary-en.png" width="100%"><br><sub>Single child summary. Accuracy, mean response time, attempts, help usage, level reached and stars, broken down by activity.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/03-visual-analysis-top-en.png" width="100%"><br><sub>Visual analysis. Headline counts and overall accuracy for one child.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/05-accuracy-by-subject-en.png" width="100%"><br><sub>Accuracy by activity.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/06-response-time-en.png" width="100%"><br><sub>Mean response time by activity, which exposes where a child is slow rather than inaccurate.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/07-stars-earned-en.png" width="100%"><br><sub>Stars earned by activity.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/08-class-overview-en.png" width="100%"><br><sub>Cohort overview. Group size, mean accuracy, mean response time and total stars.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/09-accuracy-by-student-en.png" width="100%"><br><sub>Accuracy compared across the cohort.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/10-students-table-en.png" width="100%"><br><sub>Cohort table, sortable on age, stars, accuracy, mean time and activities attempted.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/11-llm-report-controls-en.png" width="100%"><br><sub>Report generation controls, including the output language.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/12-llm-report-body-en.png" width="100%"><br><sub>Generated progress report covering strengths, difficulties and suggested next steps.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/14-talk-sessions-en.png" width="100%"><br><sub>Conversation sessions from the Talk activity, with turn count, duration and completion status.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/15-talk-session-select-en.png" width="100%"><br><sub>Sessions must be selected before a conversation report is generated.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/16-talk-report-generating-en.png" width="100%"><br><sub>Report generation running over three selected sessions.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/17-talk-report-body-en.png" width="100%"><br><sub>Generated conversation report covering engagement, language and emotion, and practical suggestions.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/18-talk-report-emailed-en.png" width="100%"><br><sub>Delivery confirmation for the report sent to the educator address.</sub></td>
+</tr>
+</table>
 
 ## Administrator panel
 
