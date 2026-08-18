@@ -279,13 +279,13 @@ The dashboard also provides group comparisons and generates written progress rep
 
 ## Administrator panel
 
-Maintenance functions behind an administrator sign in. The panel restores the
-head servos to their neutral position on each rotation axis, which is needed
-after transport or after a session in which the head was moved by hand.
+Maintenance functions are available through an administrator sign in. The panel
+restores the head servos to their neutral position on each rotation axis, which
+is useful after transport or when the head has been moved manually.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/12-admin/01-login-en.png" width="100%"><br><sub>Administrator sign in, which keeps maintenance functions out of reach during a session.</sub></td>
+<td width="50%"><img src="docs/interfaces/12-admin/01-login-en.png" width="100%"><br><sub>Administrator sign in, which keeps maintenance functions unavailable during a child session.</sub></td>
 <td width="50%"><img src="docs/interfaces/12-admin/02-panel-en.png" width="100%"><br><sub>Head servo calibration. Each rotation axis can be returned to its neutral position after transport or manual handling.</sub></td>
 </tr>
 </table>
