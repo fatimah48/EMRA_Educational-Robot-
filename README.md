@@ -170,32 +170,32 @@ This section includes two activities: **Number Tracing** and **Bubble Count**.
 
 ## Writing
 
-Handwriting and spelling. Word tracing shows a faded guide word inside the
-writing area and fills each letter in color as it is traced, in English and in
-Arabic. The Arabic levels use connected letter forms with diacritics, so the
-task is not a mirror of the English one. The spelling activity shows a picture
-and asks the child to place letter tiles in order to build the word.
+This section includes two activities: **Word Tracing** and **Spelling**.
+
+**Word Tracing** asks the child to trace words using a faded guide inside the writing area. Each letter fills with color as it is completed. The activity includes separate English and Arabic word sets.
+
+**Spelling** shows a picture and asks the child to arrange letter tiles in the correct order to build the corresponding word.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/08-writing/00-menu-en.png" width="100%"><br><sub>Entry screen for the two writing activities, word tracing and spelling.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/01-tracing-level-select-en.png" width="100%"><br><sub>Word tracing level selection, three levels.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/00-menu-en.png" width="100%"><br><sub>Entry screen for Word Tracing and Spelling.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/01-tracing-level-select-en.png" width="100%"><br><sub>Word Tracing level selection with three levels.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/08-writing/02-tracing-start-en.png" width="100%"><br><sub>Tracing task before the first stroke. The guide word sits faded inside the writing area.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/03-tracing-progress-en.png" width="100%"><br><sub>Tracing in progress. Each letter fills with color as it is completed.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/02-tracing-start-en.png" width="100%"><br><sub>Word Tracing before the first stroke, with the guide word shown inside the writing area.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/03-tracing-progress-en.png" width="100%"><br><sub>Tracing in progress as the completed letters fill with color.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/08-writing/04-tracing-success-en.png" width="100%"><br><sub>Success feedback with the pictured word, offering repetition or progression.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/05-tracing-level-select-ar.png" width="100%"><br><sub>Arabic word tracing level selection.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/04-tracing-success-en.png" width="100%"><br><sub>Completion feedback after successfully tracing the word.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/05-tracing-level-select-ar.png" width="100%"><br><sub>Arabic Word Tracing level selection.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/08-writing/06-tracing-progress-ar.png" width="100%"><br><sub>Arabic tracing in progress, using connected letter forms with diacritics rather than a transliteration of the English task.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/07-spelling-level-select-en.png" width="100%"><br><sub>Spelling activity level selection, four levels.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/06-tracing-progress-ar.png" width="100%"><br><sub>Arabic Word Tracing in progress.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/07-spelling-level-select-en.png" width="100%"><br><sub>Spelling level selection with four levels.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/08-writing/08-spelling-gameplay-en.png" width="100%"><br><sub>Spelling. Letter tiles are placed in order to build the pictured word.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/09-spelling-success-en.png" width="100%"><br><sub>Success feedback with the completed word.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/08-spelling-gameplay-en.png" width="100%"><br><sub>Spelling activity. The child arranges letter tiles to build the pictured word.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/09-spelling-success-en.png" width="100%"><br><sub>Completion feedback with the correctly spelled word.</sub></td>
 </tr>
 </table>
 
