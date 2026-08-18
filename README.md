@@ -151,19 +151,20 @@ This section includes two activities: **Color Match** and **Color Discovery**.
 
 ## Numbers
 
-Early numeracy in two forms. Numeral tracing shows a dotted guide with a marked
-starting point and speaks the number name as the stroke is completed. The
-listening task speaks a number and asks the child to find it among floating
-bubbles, which separates recognising the spoken word from producing the shape.
+This section includes two activities: **Number Tracing** and **Bubble Count**.
+
+**Number Tracing** asks the child to trace a numeral using a dotted guide and marked starting point, with spoken feedback during the activity.
+
+**Bubble Count** asks the child to count the bubbles shown on the screen and select the matching number.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/07-numbers/00-menu-en.png" width="100%"><br><sub>Entry screen for the two number activities, tracing and the listening game.</sub></td>
-<td width="50%"><img src="docs/interfaces/07-numbers/01-tracing-one-start-en.png" width="100%"><br><sub>Numeral tracing. The dotted guide carries a marked starting point and the number name is spoken as the stroke is made.</sub></td>
+<td width="50%"><img src="docs/interfaces/07-numbers/00-menu-en.png" width="100%"><br><sub>Entry screen for Number Tracing and Bubble Count.</sub></td>
+<td width="50%"><img src="docs/interfaces/07-numbers/01-tracing-one-start-en.png" width="100%"><br><sub>Number Tracing with a dotted guide and marked starting point.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/07-numbers/02-tracing-one-success-en.png" width="100%"><br><sub>Completed trace with confirmation feedback.</sub></td>
-<td width="50%"><img src="docs/interfaces/07-numbers/03-listen-find-one-en.png" width="100%"><br><sub>Listening task. A number is spoken and the matching bubble must be found, which separates hearing the word from writing the shape.</sub></td>
+<td width="50%"><img src="docs/interfaces/07-numbers/02-tracing-one-success-en.png" width="100%"><br><sub>Completion feedback after successfully tracing the numeral.</sub></td>
+<td width="50%"><img src="docs/interfaces/07-numbers/03-listen-find-one-en.png" width="100%"><br><sub>Bubble Count. The child counts the bubbles and selects the matching number.</sub></td>
 </tr>
 </table>
 
