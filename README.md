@@ -43,7 +43,7 @@ The interface adapts to the child's selected gender, displaying either the girl 
 <table>
 <tr>
 <td width="50%"><img src="docs/interfaces/01-talk/01-talk-girl-en.png" width="100%"><br><sub>Talk with EMRA using the girl interface. The child can interact in English, Arabic, or automatic language detection mode.</sub></td>
-<td width="50%"><br><br><em>Boy interface screenshot will be added here.</em><br><br></td>
+<td width="50%"><img src="docs/interfaces/01-talk/02-talk-boy-en.png" width="100%"><br><sub>Talk with EMRA using the boy interface. The child can interact in English, Arabic, or automatic language detection mode.</sub></td>
 </tr>
 </table>
 
