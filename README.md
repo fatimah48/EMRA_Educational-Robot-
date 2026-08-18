@@ -9,7 +9,7 @@ EMRA runs an activity suite on a touchscreen mounted on the robot's chest, with
 an animated face on a circular head display. A conversational track listens to
 the child, reads emotion from both speech and facial expression, and replies in
 the language of the session. Ten activities cover conversation, body awareness,
-puzzles, LEGO, painting, colours, numbers, writing, reading, and letters.
+puzzles, LEGO, painting, colors, numbers, writing, reading, and letters.
 An educator view reports progress per child and per
 group, and generates written progress notes.The robot shown below:
 
@@ -92,8 +92,8 @@ level progression.
 
 ## LEGO build
 
-The LEGO activity supports visual construction and colour matching. The child
-reproduces a target model by dragging coloured bricks from the tray onto the
+The LEGO activity supports visual construction and color matching. The child
+reproduces a target model by dragging colored bricks from the tray onto the
 building grid. Nine target models are provided with increasing complexity.
 
 In **Levels** mode, the builds unlock progressively as each model is completed.
@@ -108,8 +108,8 @@ In **Levels** mode, the builds unlock progressively as each model is completed.
 
 ## Painting
 
-The Painting activity provides seven colouring templates. The child
-selects a crayon and colours different regions of the picture. A reference
+The Painting activity provides seven coloring templates. The child
+selects a crayon and colors different regions of the picture. A reference
 image is available for guidance and can be shown or hidden during the activity.
 
 The templates include a rainbow, number, duck, turtle, elephant, house, and
@@ -117,8 +117,8 @@ ice cream, providing different shapes and levels of visual detail.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/05-painting/01-rainbow-en.png" width="100%"><br><sub>Rainbow colouring template with the crayon palette and reference image.</sub></td>
-<td width="50%"><img src="docs/interfaces/05-painting/05-elephant-en.png" width="100%"><br><sub>Elephant template with multiple regions available for colouring.</sub></td>
+<td width="50%"><img src="docs/interfaces/05-painting/01-rainbow-en.png" width="100%"><br><sub>Rainbow coloring template with the crayon palette and reference image.</sub></td>
+<td width="50%"><img src="docs/interfaces/05-painting/05-elephant-en.png" width="100%"><br><sub>Elephant template with multiple regions available for coloring.</sub></td>
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/05-painting/07-ice-cream-en.png" width="100%"><br><sub>Ice cream template, one of the seven available pictures.</sub></td>
@@ -126,26 +126,26 @@ ice cream, providing different shapes and levels of visual detail.
 </tr>
 </table>
 
-## Colours
+## colors
 
 This section includes two activities: **Color Match** and **Color Discovery**.
 
-**Color Match** asks the child to match each named crayon to its corresponding colour. Correct matches earn stars, while repeated incorrect attempts trigger a visual hint.
+**Color Match** asks the child to match each named crayon to its corresponding color. Correct matches earn stars, while repeated incorrect attempts trigger a visual hint.
 
-**Color Discovery** presents eleven colours with their written and spoken names. Selecting a colour plays a short animation and displays the colour word, linking the colour with its written and spoken form.
+**Color Discovery** presents eleven colors with their written and spoken names. Selecting a color plays a short animation and displays the color word, linking the color with its written and spoken form.
 
 <table>
 <tr>
 <td width="50%"><img src="docs/interfaces/06-colors/01-menu-en.png" width="100%"><br><sub>Entry screen for the Color Match and Color Discovery activities.</sub></td>
-<td width="50%"><img src="docs/interfaces/06-colors/02-match-gameplay-en.png" width="100%"><br><sub>Color Match. The child matches each named crayon to its corresponding colour.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/02-match-gameplay-en.png" width="100%"><br><sub>Color Match. The child matches each named crayon to its corresponding color.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/06-colors/03-match-complete-en.png" width="100%"><br><sub>Completion feedback after all colour pairs are matched.</sub></td>
-<td width="50%"><img src="docs/interfaces/06-colors/04-discover-board-en.png" width="100%"><br><sub>Color Discovery presents eleven colours that can be selected individually.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/03-match-complete-en.png" width="100%"><br><sub>Completion feedback after all color pairs are matched.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/04-discover-board-en.png" width="100%"><br><sub>Color Discovery presents eleven colors that can be selected individually.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/06-colors/05-reveal-animation-en.png" width="100%"><br><sub>Animation shown after a colour is selected.</sub></td>
-<td width="50%"><img src="docs/interfaces/06-colors/06-word-reveal-en.png" width="100%"><br><sub>The selected colour is presented with its written and spoken name.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/05-reveal-animation-en.png" width="100%"><br><sub>Animation shown after a color is selected.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/06-word-reveal-en.png" width="100%"><br><sub>The selected color is presented with its written and spoken name.</sub></td>
 </tr>
 </table>
 
@@ -170,7 +170,7 @@ bubbles, which separates recognising the spoken word from producing the shape.
 ## Writing
 
 Handwriting and spelling. Word tracing shows a faded guide word inside the
-writing area and fills each letter in colour as it is traced, in English and in
+writing area and fills each letter in color as it is traced, in English and in
 Arabic. The Arabic levels use connected letter forms with diacritics, so the
 task is not a mirror of the English one. The spelling activity shows a picture
 and asks the child to place letter tiles in order to build the word.
@@ -182,7 +182,7 @@ and asks the child to place letter tiles in order to build the word.
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/08-writing/02-tracing-start-en.png" width="100%"><br><sub>Tracing task before the first stroke. The guide word sits faded inside the writing area.</sub></td>
-<td width="50%"><img src="docs/interfaces/08-writing/03-tracing-progress-en.png" width="100%"><br><sub>Tracing in progress. Each letter fills with colour as it is completed.</sub></td>
+<td width="50%"><img src="docs/interfaces/08-writing/03-tracing-progress-en.png" width="100%"><br><sub>Tracing in progress. Each letter fills with color as it is completed.</sub></td>
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/08-writing/04-tracing-success-en.png" width="100%"><br><sub>Success feedback with the pictured word, offering repetition or progression.</sub></td>
