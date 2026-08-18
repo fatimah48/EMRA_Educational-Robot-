@@ -201,18 +201,18 @@ This section includes two activities: **Word Tracing** and **Spelling**.
 
 ## Reading
 
-Shared reading. Three short illustrated stories are narrated sentence by
-sentence with the spoken word highlighted in the text, so the child follows the
-written form while hearing it. Pages advance manually, which lets an educator
-hold on a page for as long as the child needs.
+The Reading activity provides three short illustrated stories. Each story is
+narrated sentence by sentence while the currently spoken word is highlighted,
+helping the child follow the written text during narration. Pages are advanced
+manually so the child can remain on each page as needed.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/09-reading/01-contents-en.png" width="100%"><br><sub>Contents page listing three illustrated stories with their length.</sub></td>
-<td width="50%"><img src="docs/interfaces/09-reading/02-story-star-en.png" width="100%"><br><sub>Story page during narration. The word being spoken is highlighted in the text.</sub></td>
+<td width="50%"><img src="docs/interfaces/09-reading/01-contents-en.png" width="100%"><br><sub>Story selection screen with three illustrated stories.</sub></td>
+<td width="50%"><img src="docs/interfaces/09-reading/02-story-star-en.png" width="100%"><br><sub>Story narration with the currently spoken word highlighted in the text.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/09-reading/03-story-seed-en.png" width="100%"><br><sub>Second story. Pages advance manually so an educator can hold on a page.</sub></td>
+<td width="50%"><img src="docs/interfaces/09-reading/03-story-seed-en.png" width="100%"><br><sub>Another story page with manual page navigation.</sub></td>
 <td></td>
 </tr>
 </table>
