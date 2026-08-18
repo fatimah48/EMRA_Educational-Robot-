@@ -36,9 +36,16 @@ The educator starts a session by entering the child’s name, age, identifier, a
 
 ## Talk with EMRA
 
-The child speaks with EMRA in an open conversation. Speech is transcribed, text and facial emotions are fused, and the resulting emotion is used to adapt the LLM-generated response and the robot's facial expression. When visual grounding is triggered, the VLM describes the relevant object or scene and the LLM uses that description to generate the final response. This is the only activity that uses the LLM and VLM.
+The child speaks with EMRA in an open conversation. Speech is transcribed, text and facial emotions are fused, and the resulting emotion is used to adapt the LLM-generated response and the robot's facial expression. When visual grounding is triggered, the VLM describes the relevant object or scene and the LLM uses that description to generate the final response.
 
-_Screens for this activity are being captured._
+The interface adapts to the child's selected gender, displaying either the girl or boy version while keeping the same conversational functions and language options.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/interfaces/01-talk/01-talk-girl-en.png" width="100%"><br><sub>Talk with EMRA using the girl interface. The child can interact in English, Arabic, or automatic language detection mode.</sub></td>
+<td width="50%"><br><br><em>Boy interface screenshot will be added here.</em><br><br></td>
+</tr>
+</table>
 
 ## Body parts
 
