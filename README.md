@@ -219,22 +219,23 @@ manually so the child can remain on each page as needed.
 
 ## Letters
 
-Letter work in two forms. In the recognition game the child picks a letter
-tile from a row and a correct choice grows a flower and speaks an example word
-beginning with that letter. Letter tracing then asks the child to produce the
-shape, using the same dotted guide and start marker as the numeral task.
+This section includes two activities: **Letter Garden** and **Letter Tracing**.
+
+**Letter Garden** asks the child to identify a spoken letter by selecting the matching tile. A correct choice grows the flower and presents an example word that begins with the selected letter.
+
+**Letter Tracing** asks the child to trace the shape of a letter using a dotted guide and marked starting point.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/10-letters/00-menu-en.png" width="100%"><br><sub>Entry screen for the two letter activities, the recognition garden and tracing.</sub></td>
-<td width="50%"><img src="docs/interfaces/10-letters/01-flower-start-en.png" width="100%"><br><sub>Letter recognition. A letter is named and the child picks the matching tile from the row.</sub></td>
+<td width="50%"><img src="docs/interfaces/10-letters/00-menu-en.png" width="100%"><br><sub>Entry screen for Letter Garden and Letter Tracing.</sub></td>
+<td width="50%"><img src="docs/interfaces/10-letters/01-flower-start-en.png" width="100%"><br><sub>Letter Garden. The child hears a letter and selects the matching tile.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/10-letters/02-flower-letter-a-en.png" width="100%"><br><sub>Correct choice. The flower grows and an example word beginning with the letter is spoken.</sub></td>
-<td width="50%"><img src="docs/interfaces/10-letters/04-tracing-a-start-en.png" width="100%"><br><sub>Letter tracing, using the same dotted guide and start marker as the numeral task.</sub></td>
+<td width="50%"><img src="docs/interfaces/10-letters/02-flower-letter-a-en.png" width="100%"><br><sub>Correct selection. The flower grows and an example word beginning with the letter is presented.</sub></td>
+<td width="50%"><img src="docs/interfaces/10-letters/04-tracing-a-start-en.png" width="100%"><br><sub>Letter Tracing with a dotted guide and marked starting point.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/10-letters/05-tracing-a-success-en.png" width="100%"><br><sub>Completed trace with praise from the on-screen robot.</sub></td>
+<td width="50%"><img src="docs/interfaces/10-letters/05-tracing-a-success-en.png" width="100%"><br><sub>Completion feedback after successfully tracing the letter.</sub></td>
 <td></td>
 </tr>
 </table>
