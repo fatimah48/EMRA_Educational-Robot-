@@ -128,24 +128,24 @@ ice cream, providing different shapes and levels of visual detail.
 
 ## Colours
 
-Two colour activities. The matching game asks the child to connect each named
-crayon to its swatch, which tests colour naming rather than colour perception
-alone. The discovery board presents eleven colour names, speaks each one, and
-plays a short fill animation with the written word so the spoken name, the
-written name and the colour are presented together.
+This section includes two activities: **Color Match** and **Color Discovery**.
+
+**Color Match** asks the child to match each named crayon to its corresponding colour. Correct matches earn stars, while repeated incorrect attempts trigger a visual hint.
+
+**Color Discovery** presents eleven colours with their written and spoken names. Selecting a colour plays a short animation and displays the colour word, linking the colour with its written and spoken form.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/06-colors/01-menu-en.png" width="100%"><br><sub>Entry screen for the two colour activities.</sub></td>
-<td width="50%"><img src="docs/interfaces/06-colors/02-match-gameplay-en.png" width="100%"><br><sub>Colour matching. Each named crayon is dragged to its swatch, so the task tests the colour name and not only the colour.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/01-menu-en.png" width="100%"><br><sub>Entry screen for the Color Match and Color Discovery activities.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/02-match-gameplay-en.png" width="100%"><br><sub>Color Match. The child matches each named crayon to its corresponding colour.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/06-colors/03-match-complete-en.png" width="100%"><br><sub>Feedback shown once every pair is matched.</sub></td>
-<td width="50%"><img src="docs/interfaces/06-colors/04-discover-board-en.png" width="100%"><br><sub>Colour discovery board with eleven named colours, each spoken when selected.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/03-match-complete-en.png" width="100%"><br><sub>Completion feedback after all colour pairs are matched.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/04-discover-board-en.png" width="100%"><br><sub>Color Discovery presents eleven colours that can be selected individually.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/06-colors/05-reveal-animation-en.png" width="100%"><br><sub>Fill animation played after a colour is chosen.</sub></td>
-<td width="50%"><img src="docs/interfaces/06-colors/06-word-reveal-en.png" width="100%"><br><sub>The written colour word shown with the spoken name, pairing the two forms.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/05-reveal-animation-en.png" width="100%"><br><sub>Animation shown after a colour is selected.</sub></td>
+<td width="50%"><img src="docs/interfaces/06-colors/06-word-reveal-en.png" width="100%"><br><sub>The selected colour is presented with its written and spoken name.</sub></td>
 </tr>
 </table>
 
