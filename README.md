@@ -11,7 +11,11 @@ the child, reads emotion from both speech and facial expression, and replies in
 the language of the session. Ten activities cover conversation, body awareness,
 puzzles, LEGO, painting, colours, numbers, writing, reading, and letters.
 An educator view reports progress per child and per
-group, and generates written progress notes.
+group, and generates written progress notes.The robot shown below:
+
+<p align="center">
+  <img src="docs/interfaces/emra.jpg" alt="EMRA Robot" width="450">
+</p>
 
 
 
@@ -21,18 +25,7 @@ Every screen below is from the deployed system.
 
 ## Overview and session start
 
-The chest touchscreen is the child's only point of contact with the system. It
-opens on a menu of ten activities. An educator starts a session by entering the
-child's name, age, identifier and gender, or continues as a guest when no
-record is needed. Everything the child then does is logged against that
-session, which is what the educator dashboard later reports on.
-
-The activity set was shaped by the categories of application already in
-routine use in autism therapy: communication and conversation practice,
-body and self awareness, visual matching and construction, colour and shape
-work, early numeracy, handwriting and tracing, shared reading, and letter and
-phoneme work. EMRA covers those categories in one bilingual system running on
-the robot rather than across separate tablet applications.
+The educator starts a session by entering the child’s name, age, identifier, and gender, or continues as a guest when no record is needed. Activity data from the session are logged and later presented in the educator dashboard.
 
 <table>
 <tr>
@@ -43,83 +36,56 @@ the robot rather than across separate tablet applications.
 
 ## Talk with EMRA
 
-Open conversation with EMRA. The child speaks, the robot listens, replies and
-responds with a facial expression. This is the only activity that routes
-through the language model. Speech is transcribed, emotion is read from both
-the transcript and the child's face, the two channels are fused, and the fused
-signal conditions the reply and the expression the robot shows. The
-educational games are entirely separate from this track and never call the
-language model.
+The child speaks with EMRA in an open conversation. Speech is transcribed, text and facial emotions are fused, and the resulting emotion is used to adapt the LLM-generated response and the robot's facial expression. When visual grounding is triggered, the VLM describes the relevant object or scene and the LLM uses that description to generate the final response. This is the only activity that uses the LLM and VLM.
 
 _Screens for this activity are being captured._
 
 ## Body parts
 
-Body Explorer teaches the child to identify facial parts and the hand in
-English and Arabic. The child sits in front of the robot's camera and sees
-themselves mirrored on the screen. Each round names one part, both as a
-labelled illustration and as a spoken prompt, and the child answers by
-pointing to that part on their own face.
+This section includes two bilingual activities: **Body Explorer** and **Body Parts Memory**.
 
-Two computer vision models run on the live camera stream. A face landmark
-model returns 468 three-dimensional facial landmarks per frame together with
-expression signals, which fixes the on-screen position of the nose, eyes, ears
-and mouth. A hand landmark model returns 21 hand landmarks, from which the
-index fingertip is taken. On every frame the system measures the distance from
-the fingertip to each candidate part and takes the nearest one. The answer
-counts as correct only when the nearest part is the part that was requested
-and the fingertip is held there for roughly half a second. When the fingertip
-settles on a different part the round is rejected and the child is asked to try
-again.
+**Body Explorer** teaches the child to identify facial parts and the hand. The child sees a mirrored camera view and responds to spoken and visual prompts by pointing to the requested part. Face and hand landmark detection are used to track the relevant facial regions and the child’s fingertip. A response is accepted when the child points to the correct part for a short period.
 
-That nearest-part rule is what makes the activity discriminative rather than
-merely motion sensitive: pointing at an eye when the mouth was named is
-rejected. The teeth round adds the expression signals, so the child must point
-at the mouth and show their teeth, which separates teeth from mouth despite the
-shared location. The hand round only checks that a hand is visible. Hold times
-and re-prompt thresholds are deliberately lenient to allow for imprecise motor
-control at this age.
-
-Spoken feedback is pre-rendered offline rather than synthesised at run time, so
-the activity plays bilingual audio without loading a speech model. The module
-is isolated from the rest of the robot software and cannot affect the
-conversational track.
-
+**Body Parts Memory** adds a memory task using the same camera-based interaction. The child first watches a sequence of body parts and then reproduces the sequence from memory by pointing to them in the correct order. The sequence becomes longer across four levels, increasing from one body part to four.
 _Screens for this activity are being captured._
 
 ## Puzzle
 
-Visual matching and spatial reasoning. Four pictures are offered across four
-levels, with the piece count rising from two to six. The reference picture can
-be shown on demand. Levels unlock in order, and a free play mode lets the child
-replay anything already unlocked without the level gate.
+The Puzzle activity supports visual matching and spatial reasoning through four
+progressively harder levels. The child reconstructs a reference image by placing
+the puzzle pieces in the correct positions, with the number of pieces increasing
+from two to nine. The reference picture can be shown when needed. Levels unlock
+in order, while Free Play allows available puzzles to be replayed without the
+level progression.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/03-puzzle/01-level-select-en.png" width="100%"><br><sub>Level selection. Four levels, unlocked in order, with the piece count rising from two to six.</sub></td>
-<td width="50%"><img src="docs/interfaces/03-puzzle/02-level-select-ar.png" width="100%"><br><sub>The same screen in Arabic. Layout, level order and progress state mirror to right to left.</sub></td>
+<td width="50%"><img src="docs/interfaces/03-puzzle/01-level-select-en.png" width="100%"><br><sub>Level selection. Four levels are unlocked in order, with the number of pieces increasing from two to nine.</sub></td>
+<td width="50%"><img src="docs/interfaces/03-puzzle/02-level-select-ar.png" width="100%"><br><sub>The same level-selection screen in Arabic with a right-to-left layout.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/03-puzzle/03-gameplay-bus-en.png" width="100%"><br><sub>Level one, two pieces. The reference picture is available on demand from the bar above the board.</sub></td>
-<td width="50%"><img src="docs/interfaces/03-puzzle/04-completion-bus-en.png" width="100%"><br><sub>Completion feedback. The solved picture is shown and the next level is unlocked.</sub></td>
+<td width="50%"><img src="docs/interfaces/03-puzzle/03-gameplay-bus-en.png" width="100%"><br><sub>Level one with two pieces. The reference picture can be viewed when needed.</sub></td>
+<td width="50%"><img src="docs/interfaces/03-puzzle/04-completion-bus-en.png" width="100%"><br><sub>Completion feedback shown after solving the puzzle.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/03-puzzle/06-gameplay-friends-en.png" width="100%"><br><sub>Level three, six pieces, with the unplaced pieces held in the tray below the board.</sub></td>
-<td width="50%"><img src="docs/interfaces/03-puzzle/07-free-play-en.png" width="100%"><br><sub>Free play. Any unlocked picture can be replayed without the level gate.</sub></td>
+<td width="50%"><img src="docs/interfaces/03-puzzle/06-gameplay-friends-en.png" width="100%"><br><sub>Level three with six pieces and the remaining pieces displayed below the board.</sub></td>
+<td width="50%"><img src="docs/interfaces/03-puzzle/07-free-play-en.png" width="100%"><br><sub>Free Play allows available puzzles to be replayed without the level progression.</sub></td>
 </tr>
 </table>
 
 ## LEGO build
 
-Block construction against a target model. The target is displayed beside an
-empty grid and the child drags bricks from the tray to reproduce it. Eight
-models are available, ordered by the number of bricks and the number of
-distinct colours involved.
+The LEGO activity supports visual construction and colour matching. The child
+reproduces a target model by dragging coloured bricks from the tray onto the
+building grid. Nine target models are provided with increasing complexity.
+
+In **Levels** mode, the builds unlock progressively as each model is completed.
+**Free Build** allows the child to choose any of the available target models.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/04-lego/01-level-select-en.png" width="100%"><br><sub>Level selection across eight target models, ordered by brick count and by the number of distinct colours.</sub></td>
-<td width="50%"><img src="docs/interfaces/04-lego/02-gameplay-tree-en.png" width="100%"><br><sub>Building in progress. The target model sits at the top left, the working grid in the centre, and the available bricks in the tray below.</sub></td>
+<td width="50%"><img src="docs/interfaces/04-lego/01-level-select-en.png" width="100%"><br><sub>Level Mode</sub></td>
+<td width="50%"><img src="docs/interfaces/04-lego/02-gameplay-tree-en.png" width="100%"><br><sub>Free Play</sub></td>
 </tr>
 </table>
 
