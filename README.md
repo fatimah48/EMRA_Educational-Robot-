@@ -62,7 +62,7 @@ This section includes two bilingual activities: **Body Explorer** and **Body Par
 </tr>
 <tr>
 <td width="50%"><img src="docs/interfaces/02-body-parts/03-body-explorer-camera-en.png" width="100%"><br><sub>Camera-based interaction in Body Explorer. The child points to the requested body part while the system tracks the response.</sub></td>
-<td width="50%"><br><br><em>Body Parts Memory screenshot will be added here.</em><br><br></td>
+<td width="50%"><img src="docs/interfaces/02-body-parts/04-body-memory-en.png" width="100%"><br><sub>Body Parts Memory. The child observes a body-part sequence and then reproduces it from memory in the correct order.</sub></td>
 </tr>
 </table>
 
