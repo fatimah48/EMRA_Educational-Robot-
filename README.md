@@ -242,43 +242,37 @@ This section includes two activities: **Letter Garden** and **Letter Tracing**.
 
 ## Educator dashboard
 
-The educator view, reached from a separate entry point on the main menu. For a
-single child it reports accuracy, mean response time, attempts, help usage,
-level reached and stars earned, broken down by activity. For the whole
-group it ranks children on the same measures. A report generator turns the
-logged records into written progress notes covering strengths, difficulties and
-suggested next steps, written in English or in Arabic depending on the language
-chosen before the report is produced. Conversation sessions from the Talk
-activity are listed separately with turn counts and duration, and a report can
-be generated over selected sessions and e-mailed to the educator.
+The educator dashboard presents child-level and group-level performance from the recorded activity sessions. For each child, it summarizes measures such as accuracy, response time, attempts, help usage, level reached, and stars earned across activities.
+
+The dashboard also provides group comparisons and generates written progress reports from the recorded data. Talk sessions are reported separately, including session duration and turn count, with conversation reports generated from selected sessions and optionally sent by email.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/01-children-list-en.png" width="100%"><br><sub>All enrolled children with per-activity progress, searchable by name or identifier.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/02-child-summary-en.png" width="100%"><br><sub>Single child summary. Accuracy, mean response time, attempts, help usage, level reached and stars, broken down by activity.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/01-children-list-en.png" width="100%"><br><sub>List of enrolled children with their activity progress.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/02-child-summary-en.png" width="100%"><br><sub>Individual child summary with performance measures across activities.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/03-visual-analysis-top-en.png" width="100%"><br><sub>Visual analysis. Headline counts and overall accuracy for one child.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/05-accuracy-by-subject-en.png" width="100%"><br><sub>Accuracy by activity.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/03-visual-analysis-top-en.png" width="100%"><br><sub>Visual summary of the selected child's recorded activity performance.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/05-accuracy-by-subject-en.png" width="100%"><br><sub>Accuracy across activities.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/06-response-time-en.png" width="100%"><br><sub>Mean response time by activity, which exposes where a child is slow rather than inaccurate.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/07-stars-earned-en.png" width="100%"><br><sub>Stars earned by activity.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/06-response-time-en.png" width="100%"><br><sub>Mean response time across activities.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/07-stars-earned-en.png" width="100%"><br><sub>Stars earned across activities.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/08-class-overview-en.png" width="100%"><br><sub>Overview of the whole group. Number of children, mean accuracy, mean response time and total stars.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/09-accuracy-by-student-en.png" width="100%"><br><sub>Accuracy compared across all children in the group.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/08-class-overview-en.png" width="100%"><br><sub>Group overview with overall performance measures.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/09-accuracy-by-student-en.png" width="100%"><br><sub>Accuracy comparison across children.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/10-students-table-en.png" width="100%"><br><sub>Full group table, sortable on age, stars, accuracy, mean time and activities attempted.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/12-llm-report-body-en.png" width="100%"><br><sub>Generated progress report covering strengths, difficulties and suggested next steps.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/10-students-table-en.png" width="100%"><br><sub>Group performance table with sortable measures.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/12-llm-report-body-en.png" width="100%"><br><sub>Generated progress report summarizing strengths, difficulties, and suggested next steps.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/14-talk-sessions-en.png" width="100%"><br><sub>Conversation sessions from the Talk activity, with turn count, duration and completion status.</sub></td>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/17-talk-report-body-en.png" width="100%"><br><sub>Generated conversation report covering engagement, language and emotion, and practical suggestions.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/14-talk-sessions-en.png" width="100%"><br><sub>Recorded Talk sessions with duration, turn count, and session status.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/17-talk-report-body-en.png" width="100%"><br><sub>Generated Talk report summarizing the selected conversation sessions.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/11-educator-dashboard/18-talk-report-emailed-en.png" width="100%"><br><sub>Delivery confirmation for the report sent to the educator address.</sub></td>
+<td width="50%"><img src="docs/interfaces/11-educator-dashboard/18-talk-report-emailed-en.png" width="100%"><br><sub>Confirmation after sending the generated report by email.</sub></td>
 <td></td>
 </tr>
 </table>
