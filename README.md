@@ -47,7 +47,17 @@ This section includes two bilingual activities: **Body Explorer** and **Body Par
 **Body Explorer** teaches the child to identify facial parts and the hand. The child sees a mirrored camera view and responds to spoken and visual prompts by pointing to the requested part. Face and hand landmark detection are used to track the relevant facial regions and the child’s fingertip. A response is accepted when the child points to the correct part for a short period.
 
 **Body Parts Memory** adds a memory task using the same camera-based interaction. The child first watches a sequence of body parts and then reproduces the sequence from memory by pointing to them in the correct order. The sequence becomes longer across four levels, increasing from one body part to four.
-_Screens for this activity are being captured._
+
+<table>
+<tr>
+<td width="50%"><img src="docs/interfaces/02-body-parts/01-activity-menu-en.png" width="100%"><br><sub>Body Parts menu with the Body Explorer and Body Parts Memory activities.</sub></td>
+<td width="50%"><img src="docs/interfaces/02-body-parts/02-body-explorer-intro-en.png" width="100%"><br><sub>Body Explorer introduces the facial and hand parts used in the activity.</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/interfaces/02-body-parts/03-body-explorer-camera-en.png" width="100%"><br><sub>Camera-based interaction in Body Explorer. The child points to the requested body part while the system tracks the response.</sub></td>
+<td width="50%"><br><br><em>Body Parts Memory screenshot will be added here.</em><br><br></td>
+</tr>
+</table>
 
 ## Puzzle
 
