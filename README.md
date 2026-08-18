@@ -1,5 +1,4 @@
-﻿<h1 align="center">EMRA</h1>
-<p align="center"><b>Educational Multimodal Robot Assistant</b></p>
+﻿<h1 align="center">EMRA: Educational Multimodal Robot Assistant</h1>
 <p align="center">A bilingual Arabic and English social robot for children with autism spectrum disorder.</p>
 
 <p align="center">
