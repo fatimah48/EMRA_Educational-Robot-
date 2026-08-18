@@ -108,18 +108,20 @@ In **Levels** mode, the builds unlock progressively as each model is completed.
 
 ## Painting
 
-Colour by number. Each template pairs a line drawing with a numbered key, and
-the child selects the crayon whose number matches the region. The reference
-image stays visible for comparison. Seven templates run from five regions to
-eight, so difficulty rises through both region count and region size.
+The Painting activity provides seven colouring templates. The child
+selects a crayon and colours different regions of the picture. A reference
+image is available for guidance and can be shown or hidden during the activity.
+
+The templates include a rainbow, number, duck, turtle, elephant, house, and
+ice cream, providing different shapes and levels of visual detail.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/interfaces/05-painting/01-rainbow-en.png" width="100%"><br><sub>Colour by number with five regions. The numbered key sits under the drawing and the reference image stays visible at the left.</sub></td>
-<td width="50%"><img src="docs/interfaces/05-painting/05-elephant-en.png" width="100%"><br><sub>Six region template with clustered small regions, which raises the precision needed.</sub></td>
+<td width="50%"><img src="docs/interfaces/05-painting/01-rainbow-en.png" width="100%"><br><sub>Rainbow colouring template with the crayon palette and reference image.</sub></td>
+<td width="50%"><img src="docs/interfaces/05-painting/05-elephant-en.png" width="100%"><br><sub>Elephant template with multiple regions available for colouring.</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="docs/interfaces/05-painting/07-ice-cream-en.png" width="100%"><br><sub>Eight region template, the hardest in the set.</sub></td>
+<td width="50%"><img src="docs/interfaces/05-painting/07-ice-cream-en.png" width="100%"><br><sub>Ice cream template, one of the seven available pictures.</sub></td>
 <td></td>
 </tr>
 </table>
