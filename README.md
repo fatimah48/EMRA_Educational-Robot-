@@ -17,11 +17,48 @@ group, and generates written progress notes.The robot shown below:
   <img src="docs/interfaces/emra.jpg" alt="EMRA Robot" width="450">
 </p>
 
+---
+## Hardware components
 
+EMRA separates the on-robot hardware from the server on which the models run. The Raspberry Pi 5 controls the robot, runs the educational activities, manages the displays and sensors, and sends recordings and camera frames to the server.
+
+### Processing and control
+
+| Component | Model / specifications | Location | Function |
+|---|---|---|---|
+| Main processing unit | Raspberry Pi 5 Kit | Robot body | Runs the interaction software and educational activities, drives both displays, captures audio and images, plays speech, and sends motor commands. Recordings and camera frames are sent to the server, where the models run. |
+| Servo motor driver | PCA9685 16-channel, 12-bit PWM driver with I²C interface | Robot body | Generates PWM signals for the head, neck, shoulder, and elbow servo motors. |
+
+### Display and interaction
+
+| Component | Model / specifications | Location | Function |
+|---|---|---|---|
+| Chest display | Waveshare 11.6-inch touch display, 1768 × 828 resolution | Chest | Presents the activity screen, educational games, progress feedback, language selection, and interruption control. |
+| Head display | Waveshare 5-inch round display, 1080 × 1080 resolution | Head | Displays the animated face, detected emotion, and mouth movement during speech. |
+| External microphone | Generic desktop computer microphone with mute button | External USB | Captures the child's speech for automatic speech recognition. |
+| Speaker | KASTWAVE multimedia computer speaker | Robot head | Plays the synthesized speech returned by the server. |
+
+### Vision and sensing
+
+| Component | Model / specifications | Location | Function |
+|---|---|---|---|
+| Camera | Waveshare IMX179 8MP USB Camera (A) | Head | Captures images for visual grounding and camera-based activities. |
+
+### Actuation
+
+| Component | Model / specifications | Location | Function |
+|---|---|---|---|
+| Shoulder servo | DS51150-12V high-torque servo motor | Shoulder | Drives shoulder movement for waving and hugging. |
+| Head, neck, and elbow servos | DS3218 MG servo motors | Head, neck, and elbows | Produce vertical head movement for nodding, horizontal movement for shaking, and arm movement for handshaking and clapping. |
+
+### Power components
+
+| Component | Model / specifications | Location | Function |
+|---|---|---|---|
+| Shoulder power supply | Hivision 12V, 10A AC/DC adapter, 120W | Power system | Supplies power to the 12V high-torque shoulder servos. |
+| Neck, head, and elbow power supply | 6V, 5A power supply adapter | Power system | Supplies regulated 6V power to the compatible servo motors and control components. |
 
 Every screen below is from the deployed system.
-
----
 
 ## Overview and session start
 
