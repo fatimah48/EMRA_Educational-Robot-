@@ -72,6 +72,11 @@ All values are percentages. P = precision, R = recall. The text models were eval
 RoBERTa-large is text, English. MARBERTv2 is text, Arabic. POSTER++ is vision, shared.
 
 ---
+### Confusion matrices of the fine-tuned text-emotion classifiers
+
+![Confusion matrices for RoBERTa-large (English, left) and MARBERTv2 (Arabic, right)](figures/confusion_combined_ab.png)
+
+English errors fall mainly between Angry and Sad. Arabic errors fall among the three negative emotions, with Sad the weakest at 35 of 50 correct.
 
 ## 5. LLM evaluation results
 
