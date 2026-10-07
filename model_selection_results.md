@@ -191,6 +191,7 @@ Raw CER was not recorded for English. English peak GPU memory was measured with 
 | Arabic | Whisper Large-v3 Turbo | 50.5 | 14.1 | 30.0 | 8.6 | 0.768 | **162.61** | **0.038** | 1597.2 | 0.525 |
 
 ---
+![Effect of Arabic normalization on WER](figures/asr_ar_rawnorm.png)
 
 ## 12. Text-to-speech results
 
