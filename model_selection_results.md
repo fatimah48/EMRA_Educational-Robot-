@@ -191,16 +191,29 @@ Raw CER was not recorded for English. English peak GPU memory was measured with 
 
 NISQA was used for English and SECS for Arabic. The Arabic human rating was provided by one blinded native Saudi listener and was not included in the score. UTMOS is indicative for Arabic. Mean F0 was not scored.
 
-| Lang. | Model | Human (1-5) | UTMOS ↑ | NISQA MOS ↑ | WER (%) ↓ | CER (%) ↓ | SECS ↑ | Latency (ms) ↓ | RTF ↓ | VRAM (MB) ↓ | Mean F0 (Hz) | Score |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| English | **Kokoro** | – | **4.532** | **4.979** | **0.34** | **0.11** | – | **148.6** | **0.011** | **976.2** | 204.63 | **1.0000** |
-| English | XTTS-v2 | – | 3.837 | 4.346 | 0.82 | 0.36 | – | 3826.2 | 0.260 | 2028.7 | 177.59 | 0.1421 |
-| English | Chatterbox | – | 4.399 | 4.656 | 0.48 | 0.13 | – | 6059.3 | 0.584 | 3468.1 | 151.14 | 0.4822 |
-| Arabic | **SILMA** | 3.3 | 2.625 | – | **10.97** | **3.76** | 0.919 | **2780** | **0.218** | **537.9** | 232.9 | **0.9044** |
-| Arabic | NAMAA | **3.9** | **3.231** | – | 13.06 | 3.95 | **0.930** | 11680 | 1.269 | 5820.1 | 241.2 | 0.7201 |
-| Arabic | Arabic-F5-v2 | 1.0 | 1.235 | – | 28.02 | 12.22 | 0.690 | 5290 | 0.392 | 936.2 | 235.4 | 0.1980 |
+<details>
+<summary>English results</summary>
 
----
+| Model | Human (1–5) | UTMOS ↑ | NISQA MOS ↑ | WER (%) ↓ | CER (%) ↓ | Latency (ms) ↓ | RTF ↓ | VRAM (MB) ↓ | Mean F0 (Hz) | Score |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **Kokoro** | – | **4.532** | **4.979** | **0.34** | **0.11** | **148.6** | **0.011** | **976.2** | 204.63 | **1.0000** |
+| XTTS-v2 | – | 3.837 | 4.346 | 0.82 | 0.36 | 3826.2 | 0.260 | 2028.7 | 177.59 | 0.1421 |
+| Chatterbox | – | 4.399 | 4.656 | 0.48 | 0.13 | 6059.3 | 0.584 | 3468.1 | 151.14 | 0.4822 |
+
+</details>
+
+<details>
+<summary>Arabic results</summary>
+
+| Model | Human (1–5) | UTMOS ↑ | WER (%) ↓ | CER (%) ↓ | SECS ↑ | Latency (ms) ↓ | RTF ↓ | VRAM (MB) ↓ | Mean F0 (Hz) | Score |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **SILMA** | 3.3 | 2.625 | **10.97** | **3.76** | 0.919 | **2780** | **0.218** | **537.9** | 232.9 | **0.9044** |
+| NAMAA | **3.9** | **3.231** | 13.06 | 3.95 | **0.930** | 11680 | 1.269 | 5820.1 | 241.2 | 0.7201 |
+| Arabic-F5-v2 | 1.0 | 1.235 | 28.02 | 12.22 | 0.690 | 5290 | 0.392 | 936.2 | 235.4 | 0.1980 |
+
+</details>
+
+*— = not measured or not applicable.*
 
 ## 13. Vision-language model benchmark and deployment results
 
