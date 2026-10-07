@@ -270,3 +270,23 @@ Used to rank the speech recognition, speech synthesis, and vision-language candi
 | Latency | Mean response time on the deployment hardware | 0.25 |
 | Throughput | Queries processed per second | 0.10 |
 | VRAM | Peak GPU memory during inference | 0.10 |
+
+---
+
+## 15. Statistical procedure for the LLM evaluation
+
+Descriptive results were computed as the mean score per criterion and model, including scores broken down by emotion. Pairwise differences in overall score were tested using the Wilcoxon signed-rank test, since all three models answered the same scenarios, with significance at p < 0.05. English p-values were not adjusted for multiple comparisons, while the Arabic tests used Holm adjustment.
+
+Agreement between the two human evaluators was measured as the proportion of scores differing by no more than one point and as quadratic-weighted Cohen's kappa, which adjusts for chance agreement and penalizes larger gaps more heavily. Human and automated ratings were compared at the model level, to check whether both selected the same best model, and at the response level using Pearson correlation and mean absolute difference.
+
+The Arabic evaluation applies the same procedure and adds the Friedman test across the three models, Cliff's delta for the size and direction of each pairwise difference, Cochran's Q for the MSA-drift indicator, and Pearson correlation with Krippendorff's alpha to check agreement among the three LLM judges.
+
+### Judge panels
+
+Three judges scored each response per language, none sharing a model family with a candidate. The English panel was GPT-4o, Phi-4, and Gemma-2-9B-IT. The Arabic panel was Qwen2.5-14B-Instruct, Llama-3.1-8B-Instruct, and Phi-4. Gemma-2-9B-IT was excluded from the Arabic panel for that reason. An Arabic-specialized model was also tested but excluded because it did not reliably return structured criterion scores.
+
+Judges received the child's speech, emotion label, generated response, and rubric, without the identity of the generating model, and were instructed not to reward longer answers. The Arabic prompt was written in Arabic and stated the dialect requirement explicitly. The three judges' scores were averaged per response.
+
+### Generation settings
+
+All six models ran locally through Ollama with four-bit quantization, at temperature 0.7 with a fixed seed, capped at 300 new tokens for English and 256 for Arabic. Each language used 200 scenarios from its emotion dataset, 40 per emotion class, giving 600 responses per language.
