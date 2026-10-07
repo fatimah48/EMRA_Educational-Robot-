@@ -77,6 +77,10 @@ voice was used for all three.
 | LLaVA-OneVision-7B | `llava-hf/llava-onevision-qwen2-7b-ov-hf` | 4-bit |
 
 ---
+Descriptions were generated at temperature 0.7 with a limit of 160 new tokens, from a prompt
+in the target language. Llama-3.1-8B-Instruct judged English fluency and ALLaM-7B judged
+Arabic, so that fluency was assessed in the language being generated. All other settings were
+identical across the two languages.
 
 ## Label Mappings
 
