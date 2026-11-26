@@ -264,7 +264,7 @@ shows. Safety behaved differently from quality, with pass rates of 99.5%
 for Command-R, 97.5% for ALLaM, and 91.5% for SILMA, so the quality
 winner was not the safest model.
 
-![Predicted dialect of each model's Arabic replies, classified using MARBERTv2](figures/llm/predicted_dilect_of_each_model_ar.png)
+![Predicted dialect of each model's Arabic replies, classified using MARBERTv2](figures/predicted_dilect_of_each_model_ar.png)
 
 *Figure: Predicted dialect of each model's Arabic replies, classified using MARBERTv2.*
 
